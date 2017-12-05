@@ -22,16 +22,24 @@ public class JediCrystals {
 
 
 
+        String t = "";
+        r = 0;
+                g = 0;
+                        b = 0;
+        while(sc.hasNext()) {
+            t = sc.next();
+            if (t.equalsIgnoreCase("r")) {
+                r++;
 
-        String t = sc.nextLine();
-        if(t.equalsIgnoreCase("r")){
-            r++;
-        }
-        else if(t.equalsIgnoreCase("b")){
-            b++;
-        }
-        else if(t.equalsIgnoreCase("g")){
-            g++;
+            } else if (t.equalsIgnoreCase("b")) {
+                b++;
+
+            } else if (t.equalsIgnoreCase("g")) {
+                g++;
+
+            }
+            if(r == b && r == g && g == b)
+                return r;
         }
 
 
