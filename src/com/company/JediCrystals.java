@@ -21,6 +21,8 @@ public class JediCrystals {
 		 */
 
 
+
+
         String t = sc.nextLine();
         if(t.equalsIgnoreCase("r")){
             r++;
